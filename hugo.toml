@@ -30,7 +30,7 @@ mainSections = ["posts"]
   [[menu.main]]
     name = "About"
     weight = 1
-    url = "/"
+    url = "/about/"
   [[menu.main]]
     name = "Blog" # This will be the menu item label
     weight = 2
