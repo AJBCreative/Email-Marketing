@@ -3,8 +3,6 @@ title: "About Me" # This will be the title of your About page
 date: 2025-06-24T12:40:00-04:00 # Current date/time in EDT
 lastmod: 2025-06-24T12:40:00-04:00
 draft: false # Set to false to publish the page
-menu: "main" # This ensures it appears in the main navigation menu (if you also set url = "/" in your hugo.toml)
-weight: 1    # Controls its order in the menu (smaller number means earlier)
 ---
 
 Welcome to **One Send at a Time**!
