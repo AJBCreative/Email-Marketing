@@ -1,0 +1,17 @@
+baseURL = "https://ajbcreative.github.io/Email-Marketing/"
+languageCode = 'en-us'
+title = 'One Send at a time'
+theme = "hugo-coder"
+
+[params]
+  author = "Adam Boudreau"
+  info = "Email Marketing Enthusiast"
+  description = "Working for all of us to get the most out of email marketing in currentYear()"
+  keywords = "blog, personal, email-marketing, best practices"
+
+  # Social icons (example, copy from Coder's exampleSite for more)
+  [[params.social]]
+    name = "Github"
+    icon = "fa-brands fa-github fa-2x" # Requires FontAwesome; check Coder's docs
+    weight = 1
+    url = "https://github.com/AJBCreative/"
