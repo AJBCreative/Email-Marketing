@@ -1,45 +1,36 @@
 baseURL = "https://ajbcreative.github.io/Email-Marketing/"
 languageCode = 'en-us'
-title = 'One Send at a Time' # Changed 'One Send at a time' to use standard title casing for consistency
+title = 'One Send at a Time'
 theme = "hugo-coder"
 
 # Required for blog posts to be recognized by Hugo and themes for listing, RSS etc.
-# "posts" corresponds to the 'content/posts/' directory where your blog posts live.
 mainSections = ["posts"] 
 
 [params]
   author = "Adam Boudreau"
   info = "Email Marketing Enthusiast"
-  description = "Insights and best practices for modern email marketing." # Updated description placeholder
-  keywords = "blog, personal, email-marketing, best practices, digital marketing" # Added more keywords
+  description = "Insights and best practices for modern email marketing in our currentYear();."
+  keywords = "blog, personal, email-marketing, best practices, digital marketing"
 
-  # Replace 'currentYear()' with the actual current year for your description
-  # You could also use a Hugo shortcode in your templates if you want it dynamic,
-  # but for the config, a static year is fine or just remove it if you prefer.
-  # For example: description = "Working for all of us to get the most out of email marketing."
-
-  # Social icons (example, copy from Coder's exampleSite for more)
   [[params.social]]
     name = "Github"
-    icon = "fa-brands fa-github fa-2x" # Requires FontAwesome; check Coder's docs
+    icon = "fa-brands fa-github fa-2x"
     weight = 1
     url = "https://github.com/AJBCreative/"
 
-# Add a menu section to link to your blog posts
+# Corrected menu configuration to include a dedicated "Home" link
 [menu]
   [[menu.main]]
-    name = "About"
+    name = "Home"       # This is the dedicated Home link
     weight = 1
-    url = "/about/"
-  [[menu.main]]
-    name = "Blog" # This will be the menu item label
-    weight = 2
-    url = "/posts/" # This links to the list page of all your blog posts
+    url = "/"           # This points to your main homepage (content/_index.md)
 
-# You might want to add other Coder theme specific parameters here from their exampleSite
-# For instance:
-#   avatarURL = "/images/avatar.jpg" # If you add an avatar image to static/images/
-#   dateFormat = "January 2, 2006"
-#   hideFooter = false
-#   hideCopyright = false
-#   toc = true # Enable Table of Contents for posts
+  [[menu.main]]
+    name = "About"      # This is your dedicated About page link
+    weight = 2          # Now correctly weighted after Home
+    url = "/about/"     # This points to content/about/index.md
+
+  [[menu.main]]
+    name = "Blog"       # Your blog posts link
+    weight = 3          # Now correctly weighted after About
+    url = "/posts/"
